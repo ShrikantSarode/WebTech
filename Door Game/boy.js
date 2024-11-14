@@ -12,30 +12,30 @@ btn1.onclick = () => {
   // Display a personalized greeting
   // result.innerHTML = input1 + " Good Person";
   result.innerHTML = `<span style="color: green;">${input1} is Good Person👌😊</span>`;
-  alert(input1 + " is Good Person ");
+  alert(" Ready to see ?");
 };
 btn2.onclick = () => {
   // Get the value from the input field
   let input1 = document.getElementById("inp1").value;
 
   // Display a personalized greeting
-  result.innerHTML = `<span style="color: red;">${input1} is Bhavda</span>`;
-  alert(input1 + "  ");
+  result.innerHTML = `<span style="color: red;">${input1} is Bhadva 🥲</span>`;
+  alert(" Ready to see ?");
 };
 btn3.onclick = () => {
   // Get the value from the input field
   let input1 = document.getElementById("inp1").value;
 
   // Display a personalized greeting
-  result.innerHTML = `<span style="color: red;">${input1} is Sonu🤪</span>`;
-  alert(input1 + " ");
+  result.innerHTML = `<span style="color: red;">${input1} is Chirkut🤪</span>`;
+  alert(" Ready to see ?");
 };
 btn4.onclick = () => {
   // Get the value from the input field
   let input1 = document.getElementById("inp1").value;
-  alert(input1 + "   ");
+  alert(" Ready to see ?");
   // Display a personalized greeting
-  result.innerHTML = input1 + " Mutkhada 😒 ";
+  result.innerHTML = input1 + " have Mutkhada 😒 ";
 };
 btn5.onclick = () => {
   let input1 = document.getElementById("inp1").value;

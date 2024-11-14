@@ -4,28 +4,33 @@ const API_key = "oJV6f+7HZ8CtLrZmo2tv/w==RcxZvbCpPgAFqhh9";
 const heading = document.querySelector(".heading");
 const searchBtn = document.querySelector("#btn");
 const loader = document.querySelector("#loader");
+let category = document.querySelector("#category");
 
-async function nextQuote() {
-    loader.style.display = "block";
+async function nextQuoteCategory(category) {
+  loader.style.display = "block";
   // Fetch the quote from the 'happiness' category
-  const url = `https://api.api-ninjas.com/v1/quotes?category=happiness`;
+ 
+   const url1 = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
 
-  const response = await fetch(url, {
-    method: "GET", // Use GET request method
+  const response = await fetch(url1, {
+    method: "GET",  
     headers: {
-      "X-Api-Key": API_key, // Include your API key in the request header
+      "X-Api-Key": API_key,  
     },
   });
 
   const data = await response.json();
 
-    loader.style.display = "none";
-    
-    console.log(data);
+  loader.style.display = "none";
 
-  heading.innerHTML = data[0].quote;
+  console.log(data);
+
+  heading.innerHTML = `"${data[0].quote}"`;
 }
 
+// searchBtn.addEventListener("click", () => {
+//   nextQuote();
+// });
 searchBtn.addEventListener("click", () => {
-  nextQuote();
-});
+  nextQuoteCategory(category.value);
+})
