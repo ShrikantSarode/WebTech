@@ -19,7 +19,7 @@ btn2.onclick = () => {
   let input1 = document.getElementById("inp1").value;
 
   // Display a personalized greeting
-  result.innerHTML = `<span style="color: red;">${input1} is Bhadva 🥲</span>`;
+  result.innerHTML = `<span style="color: red;">${input1} is Dengue 🥲</span>`;
   alert(" Ready to see ?");
 };
 btn3.onclick = () => {
@@ -35,7 +35,7 @@ btn4.onclick = () => {
   let input1 = document.getElementById("inp1").value;
   alert(" Ready to see ?");
   // Display a personalized greeting
-  result.innerHTML = input1 + " have Mutkhada 😒 ";
+  result.innerHTML = input1 + " is Menduvada 😒 ";
 };
 btn5.onclick = () => {
   let input1 = document.getElementById("inp1").value;

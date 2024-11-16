@@ -1,7 +1,7 @@
 /* General Styling */
 body {
   font-family: Arial, sans-serif;
-  /* background-color: #cd05ff; */
+  /* background-color: #05b8ff; */
   margin: 0;
   padding: 0;
   display: flex;
@@ -21,7 +21,7 @@ body {
 }
 
 /* Input Field */
-#inp2 {
+#inp1 {
   width: 100%;
   padding: 10px;
   margin: 15px 0;
@@ -31,8 +31,8 @@ body {
   box-sizing: border-box;
 }
 
-#inp2:focus {
-  border-color: #ff00ea;
+#inp1:focus {
+  border-color: #007bff;
   outline: none;
 }
 
@@ -50,7 +50,7 @@ button {
 }
 
 button:hover {
-  background-color: #882a70;
+  background-color: #130616;
 }
 
 button:focus {

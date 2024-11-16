@@ -8,22 +8,22 @@ let input = document.getElementById("inp2").value;
 
 btn1.onclick = () => {
   let input = document.getElementById("inp2").value;
-  result.innerHTML = `${input} is a Madest Person`;
+  result.innerHTML = `${input} <span style="color:red;">is a Murkha </span> 🤪`;
 };
 
 btn2.onclick = () => {
   let input = document.getElementById("inp2").value;
-  result.innerHTML = `${input} is a Good Person`;
+  result.innerHTML = `${input} <span style="color:green;">is a Hushar Person</span>😊`;
 };
 
 btn3.onclick = () => {
   let input = document.getElementById("inp2").value;
-  result.innerHTML = `${input} is a Bad Person`;
+  result.innerHTML = `${input} <span style="color:red;">is a Bandariya </span>😂🤣`;
 };
 
 btn4.onclick = () => {
   let input = document.getElementById("inp2").value;
-  result.innerHTML = `${input} is a Gold digger`;
+  result.innerHTML = `${input} <span style="color:red;">is a Gold digger</span>😲😱`;
 };
 btn5.onclick = () => {
   result.innerHTML = " ";
