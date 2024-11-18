@@ -3,6 +3,7 @@ var express = require("express");
 //C:\Users\CDAC\Desktop\WEB Tech\Node js\project1\index.js
 var mongoose = require("mongoose");
 var db = require("./DataBase/db.js");
+var cors = require("cors");
 
 console.log(db);
 db();
@@ -19,6 +20,7 @@ const userModel = mongoose.model("users", usersSchema);
 
 var app = express();
 app.use(express.json());
+app.use(cors());
 
 app.get("/users", async (req, res) => {
   try {
@@ -64,7 +66,7 @@ app.get("/usersinfo/", async (req, res) => {
 });
 
 app.post("/usersinfo/", async (req, res) => {
-//   console.log(req.body);
+  //   console.log(req.body);
 
   connection.query("insert into emp set ?", req.body, (err, result) => {
     if (err) {
