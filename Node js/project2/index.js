@@ -1,6 +1,5 @@
-//C:\Users\CDAC\Desktop\WEB Tech\Node js\project1\index.js
 var express = require("express");
-//C:\Users\CDAC\Desktop\WEB Tech\Node js\project1\index.js
+
 var mongoose = require("mongoose");
 var db = require("./db");
 
@@ -30,13 +29,13 @@ app.get("/products", async (req, res) => {
 });
 
 app.post("/products", async function (req, res) {
-    try {
-      var record = new userModel(req.body); // Create a new user record
-      var ans = await record.save(); // Save the record to the database
-      res.send("Record inserted: "); // Respond with the inserted record's ID or other useful info
-    } catch (err) {
-      res.send("Error: " + err); // Send the error message
-    }
-  });
+  try {
+    var record = new userModel(req.body); // Create a new user record
+    var ans = await record.save(); // Save the record to the database
+    res.send("Record inserted: "); // Respond with the inserted record's ID or other useful info
+  } catch (err) {
+    res.send("Error: " + err); // Send the error message
+  }
+});
 
-  app.listen(9000);
+app.listen(9000);
