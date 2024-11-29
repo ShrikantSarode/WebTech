@@ -23,7 +23,7 @@ function Header() {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <Link class="nav-link "  to="/home">
+                  <Link class="nav-link " to="/home">
                     Home
                   </Link>
                 </li>
@@ -40,6 +40,11 @@ function Header() {
                 <li class="nav-item">
                   <Link class="nav-link " to="/content">
                     Content
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  <Link class="nav-link " to="/product">
+                    Products
                   </Link>
                 </li>
               </ul>

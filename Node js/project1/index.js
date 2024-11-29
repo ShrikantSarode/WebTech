@@ -37,7 +37,7 @@ app.post("/users", async function (req, res) {
     var ans = await record.save(); // Save the record to the database
     res.send("Record inserted: "); // Respond with the inserted record's ID or other useful info
   } catch (err) {
-    res.send("Error: " + err); // Send the error message
+    res.send("Error: " + err.message); // Send the error message
   }
 });
 //mysql

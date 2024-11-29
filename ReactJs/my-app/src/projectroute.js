@@ -5,6 +5,7 @@ import Register from "./Components/Register";
 import Content from "./Components/Content";
 import Header from "./Components/Header";
 import App from "./Components/App";
+import Product1 from "./Components/Product1";
 
 const projectroute = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ const projectroute = createBrowserRouter([
         path: "/content",
         element: <Content />,
       },
+      {
+        path: "/product",
+        element: <Product1 />,
+      },
+
       {
         path: "/header",
         element: <Header />,
